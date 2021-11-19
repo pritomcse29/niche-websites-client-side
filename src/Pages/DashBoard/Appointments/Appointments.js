@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import useAuth from './../../../hooks/useAuth';
 import Table from '@mui/material/Table';
@@ -29,7 +30,7 @@ const Appointments = ({ date }) => {
                             <TableCell>Name</TableCell>
 
                             <TableCell align="right">Order</TableCell>
-                            <TableCell align="right">Action</TableCell>
+
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -39,7 +40,7 @@ const Appointments = ({ date }) => {
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
                                 <TableCell component="th" scope="row">
-                                    {row.carName}
+                                    {row.patientName}
                                 </TableCell>
                                 <TableCell align="right">{row.time}</TableCell>
                                 <TableCell align="right">{row.serviceName}</TableCell>

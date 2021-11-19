@@ -29,12 +29,12 @@ const AllReview = () => {
     }
     return (
         <div>
-            <h2>All Reviews Are Available:{users.length}</h2>
+            <h2> Available:{users.length}</h2>
             <ul style={{ marginBottom: '15', border: '2px solid gray' }}>
                 {
                     users.map(user => <li style={{ marginBottom: '15', border: '2px solid gray' }}
                         key={user._id}
-                    >Name:{user.name}  <br /> City:{user.city}<br /> Comment:{user.comment}<br />
+                    >Name:{user.name}  <br /> Comment:{user.comment}<br />
                         {/* <br />Order Status:{user.orderUpdate}<br /> */}
                         {/* orderStatus:<input type="text" placeholder="Address" value="pending" name="" id="" /> <br /><br /> */}
                         {/* <Link to={`/users/update/${user._id}`}> <button>Update</button></Link>
