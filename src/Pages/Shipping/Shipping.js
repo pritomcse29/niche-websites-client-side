@@ -10,7 +10,7 @@ const Shipping = () => {
     const onSubmit = data => {
         const savedCart = getStoredCart();
         data.order = savedCart;
-        fetch('http://localhost:5000/', {
+        fetch('https://protected-spire-55400.herokuapp.com/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

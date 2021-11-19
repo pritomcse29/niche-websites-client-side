@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const AllReview = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://protected-spire-55400.herokuapp.com/users')
             .then(res => res.json())
             .then(data => setUsers(data));
     }, []);
@@ -13,7 +13,7 @@ const AllReview = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure,you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/users/${id}`;
+            const url = `https://protected-spire-55400.herokuapp.com/users/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -19,7 +19,7 @@ const Services = () => {
     const [displayProducts, setDisplayProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/cars')
+        fetch('https://protected-spire-55400.herokuapp.com/cars')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);

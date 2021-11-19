@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import BookingModal from "../BookingModal/BookingModal";
 const Booking = ({ booking, date, setBookingSuccess }) => {
-    const { name, time, space, img, price } = booking;
+    const { name, time, space, img, price, description } = booking;
     const [openBooking, setBookingOpen] = React.useState(false);
     const handleBookingOpen = () => setBookingOpen(true);
     const handleBookingClose = () => setBookingOpen(false);
@@ -19,6 +19,9 @@ const Booking = ({ booking, date, setBookingSuccess }) => {
                 <Paper elevation={3} sx={{ py: 5 }}>
                     <Typography sx={{ color: 'info.main', fontWeight: 600 }} variant="h5" gutterBottom component="div">
                         <img src={img}></img>
+                    </Typography>
+                    <Typography sx={{ color: 'info.main', fontWeight: 600 }} variant="h5" gutterBottom component="div">
+                        {description}
                     </Typography>
                     <Typography sx={{ color: 'info.main', fontWeight: 600 }} variant="h5" gutterBottom component="div">
                         {name}

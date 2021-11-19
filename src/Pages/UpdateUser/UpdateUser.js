@@ -8,7 +8,7 @@ const UpdateUser = () => {
     const { id } = useParams();
     const [user, setUser] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/users/${id}`;
+        const url = `https://protected-spire-55400.herokuapp.com/users/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setUser(data));
@@ -33,7 +33,7 @@ const UpdateUser = () => {
         setUser(updatedUser);
     }
     const handleUpdateUser = e => {
-        const url = `http://localhost:5000/users/${id}`;
+        const url = `https://protected-spire-55400.herokuapp.com/users/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

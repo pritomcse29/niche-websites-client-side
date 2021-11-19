@@ -48,7 +48,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             date: date.toLocaleDateString()
         }
         //send to the server
-        fetch('http://localhost:5000/booking', {
+        fetch('https://protected-spire-55400.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -92,21 +92,14 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
 
                     </Typography>
                     <form onSubmit={handleBookingSubmit}>
-                        {/* <TextField
-                            disabled
-                            sx={{ width: '90%', m: 1 }}
-                            id="filled-size-small"
-                            defaultValue={time}
 
-                            size="small"
-                        /> */}
 
                         <TextField
 
                             sx={{ width: '90%', m: 1 }}
                             id="outlined-size-small"
                             onBlur={handleOnBlur}
-                            name="patientName"
+                            name="carName"
                             defaultValue={user.displayName}
 
                             size="small"

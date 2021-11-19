@@ -24,7 +24,7 @@ const AddReview = () => {
         // , orderUpdate 
         const newUser = { name, comment };
 
-        fetch('http://localhost:5000/users/', {
+        fetch('https://protected-spire-55400.herokuapp.com/users/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

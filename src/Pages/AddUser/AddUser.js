@@ -26,7 +26,7 @@ const AddUser = () => {
         // , orderUpdate 
         const newUser = { city, phone, name, email, address };
 
-        fetch('http://localhost:5000/users/', {
+        fetch('https://protected-spire-55400.herokuapp.com/users/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

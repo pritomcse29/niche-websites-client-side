@@ -13,7 +13,7 @@ const Appointments = ({ date }) => {
     const [appointments, setAppointments] = useState([])
 
     useEffect(() => {
-        const url = `http://localhost:5000/booking?email=${user.email}&date=${date}`
+        const url = `https://protected-spire-55400.herokuapp.com/booking?email=${user.email}&date=${date}`
         fetch(url)
             .then(res => res.json())
             .then(data => setAppointments(data));
@@ -27,7 +27,7 @@ const Appointments = ({ date }) => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Name</TableCell>
-                            <TableCell align="right">Time</TableCell>
+
                             <TableCell align="right">Order</TableCell>
                             <TableCell align="right">Action</TableCell>
                         </TableRow>
@@ -39,7 +39,7 @@ const Appointments = ({ date }) => {
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
                                 <TableCell component="th" scope="row">
-                                    {row.patientName}
+                                    {row.carName}
                                 </TableCell>
                                 <TableCell align="right">{row.time}</TableCell>
                                 <TableCell align="right">{row.serviceName}</TableCell>
