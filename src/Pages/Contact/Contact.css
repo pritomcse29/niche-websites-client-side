@@ -1,0 +1,19 @@
+.space-address{
+    padding: 2%;
+    color:black;
+    border: 1px solid black;
+}
+.contact-style{
+
+    margin-top: 10px;
+}
+.style-message{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: linen;
+    padding: 5%;
+}
+.message-us{
+    margin-top: 40px;
+    margin-left: 40px;
+}

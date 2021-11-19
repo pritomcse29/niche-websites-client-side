@@ -1,0 +1,15 @@
+.style-color{
+    background-color: lightseagreen;
+    padding: 10%;
+}
+.error-style{
+    background-color: lightyellow;
+    padding: 5%;
+}
+.button-style{
+   padding: 10px;
+   margin-left: 10px;
+}
+.style-anchor{
+text-decoration: none;
+}

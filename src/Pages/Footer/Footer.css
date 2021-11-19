@@ -1,0 +1,14 @@
+.footer-container{
+    background-color: #05203E;
+    color: beige;
+    width: 100%;
+    padding: 3%;
+    margin-top: 50px;
+}
+.space{
+    padding-left: 1%;
+color: brown;
+}
+.anchor-style a{
+    text-decoration: none;
+}
